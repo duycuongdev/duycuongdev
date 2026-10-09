@@ -2,12 +2,6 @@
   <img src="./banner.svg" alt="Banner" width="100%" />
 </p>
 
-<h1 align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=2F80ED&center=true&vCenter=true&random=false&width=600&lines=Full-stack+Developer.;PTIT+Student.;Building+scalable+web+apps.;Exploring+JavaScript+%26+TypeScript." alt="Typing SVG" />
-  </a>
-</h1>
-
 <p align="center">
   <a href="https://www.facebook.com/duy.cuong.951409">
     <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook Badge"/>
