@@ -1,29 +1,71 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="900" height="200">
-<style>.t{font-family:Arial,sans-serif;font-weight:bold;font-size:14px;fill:#f8fafc}.d{font-family:Arial,sans-serif;font-size:11px;fill:#94a3b8}.tc{font-family:monospace;font-size:10px;fill:#cbd5e1}.tg{font-family:monospace;font-size:9px;fill:#94a3b8}</style><g transform="translate(15,10)">
-    <rect width="270" height="160" rx="8" fill="#0d1117" stroke="#1e293b" stroke-width="1"/>
-    <rect x="220" y="15" width="35" height="18" rx="9" fill="#1e293b"/>
-    <text x="237" y="27" text-anchor="middle" class="tg">Clone</text>
-    <circle cx="30" cy="24" r="12" fill="#38bdf8" opacity="0.2"/>
-    <text x="15" y="60" class="t">Trello_Web & API</text>
-    <text x="15" y="80" class="d">Full-featured project and workflow </text><text x="15" y="96" class="d">management app clone with interactive </text><text x="15" y="112" class="d">drag-and-drop boards and workspace </text><text x="15" y="128" class="d">collaboration. </text>
-    <circle cx="20" cy="140" r="3" fill="#38bdf8"/>
-    <text x="30" y="143" class="tc">React � REST API</text>
-  </g><g transform="translate(305,10)">
-    <rect width="270" height="160" rx="8" fill="#0d1117" stroke="#1e293b" stroke-width="1"/>
-    <rect x="220" y="15" width="35" height="18" rx="9" fill="#1e293b"/>
-    <text x="237" y="27" text-anchor="middle" class="tg">System</text>
-    <circle cx="30" cy="24" r="12" fill="#10b981" opacity="0.2"/>
-    <text x="15" y="60" class="t">AquaLife Web & API</text>
-    <text x="15" y="80" class="d">Automated aquarium management system </text><text x="15" y="96" class="d">for monitoring water parameters, </text><text x="15" y="112" class="d">feeding cycles, and life-cycle </text><text x="15" y="128" class="d">analytics. </text>
-    <circle cx="20" cy="140" r="3" fill="#10b981"/>
-    <text x="30" y="143" class="tc">Node.js � MongoDB</text>
-  </g><g transform="translate(595,10)">
-    <rect width="270" height="160" rx="8" fill="#0d1117" stroke="#1e293b" stroke-width="1"/>
-    <rect x="220" y="15" width="35" height="18" rx="9" fill="#1e293b"/>
-    <text x="237" y="27" text-anchor="middle" class="tg">Tool</text>
-    <circle cx="30" cy="24" r="12" fill="#f43f5e" opacity="0.2"/>
-    <text x="15" y="60" class="t">TikTok Downloader</text>
-    <text x="15" y="80" class="d">High-speed video downloading tool and </text><text x="15" y="96" class="d">media scraper supporting watermark </text><text x="15" y="112" class="d">removal and batch audio extractions. </text>
-    <circle cx="20" cy="140" r="3" fill="#f43f5e"/>
-    <text x="30" y="143" class="tc">TypeScript � Scraper</text>
-  </g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="900" height="240">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0a0e17"/><stop offset="100%" stop-color="#0d1117"/></linearGradient>
+    <linearGradient id="bd" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#38bdf8" stop-opacity="0.5"/><stop offset="50%" stop-color="#818cf8" stop-opacity="0.3"/><stop offset="100%" stop-color="#e879f9" stop-opacity="0.5"/></linearGradient>
+    <style>
+      .hdr { font-family: sans-serif; font-size: 13px; font-weight: bold; fill: #e879f9; letter-spacing: 2px; }
+      .title { font-family: sans-serif; font-size: 15px; font-weight: bold; fill: #ffffff; }
+      .desc { font-family: sans-serif; font-size: 12px; fill: #8b949e; }
+      .tag { font-family: sans-serif; font-size: 10px; fill: #38bdf8; font-weight: bold; }
+      .card { animation: fade 0.6s ease forwards; opacity: 0; }
+      @keyframes fade { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+    </style>
+  </defs>
+
+  <rect width="900" height="240" rx="12" fill="url(#bg)"/>
+  <rect width="900" height="240" rx="12" fill="none" stroke="url(#bd)" stroke-width="1.5"/>
+  <text x="450" y="30" text-anchor="middle" class="hdr">🚀 FEATURED PROJECTS</text>
+  <line x1="60" y1="40" x2="840" y2="40" stroke="#1f2937" stroke-width="1"/>
+
+  <!-- Card 1 -->
+  <g transform="translate(45, 60)" class="card" style="animation-delay:0.1s">
+    <rect width="250" height="150" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <rect x="15" y="15" width="30" height="30" rx="6" fill="#38bdf8" fill-opacity="0.1"/>
+    <text x="30" y="35" text-anchor="middle" font-size="14">📋</text>
+    <rect x="200" y="15" width="40" height="18" rx="9" fill="#1f2937"/>
+    <text x="220" y="27" text-anchor="middle" fill="#8b949e" font-size="9" font-family="sans-serif">Clone</text>
+    <text x="15" y="70" class="title">Trello Web &amp; API</text>
+    <foreignObject x="15" y="80" width="220" height="50">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:sans-serif;font-size:11px;color:#8b949e;line-height:1.4;">
+        Full-featured project management app clone with interactive drag-and-drop boards.
+      </div>
+    </foreignObject>
+    <circle cx="20" cy="140" r="4" fill="#61DAFB"/>
+    <text x="30" y="143" class="tag">React • REST API</text>
+  </g>
+
+  <!-- Card 2 -->
+  <g transform="translate(325, 60)" class="card" style="animation-delay:0.3s">
+    <rect width="250" height="150" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <rect x="15" y="15" width="30" height="30" rx="6" fill="#42b883" fill-opacity="0.1"/>
+    <text x="30" y="35" text-anchor="middle" font-size="14">🐟</text>
+    <rect x="195" y="15" width="45" height="18" rx="9" fill="#1f2937"/>
+    <text x="217" y="27" text-anchor="middle" fill="#8b949e" font-size="9" font-family="sans-serif">System</text>
+    <text x="15" y="70" class="title">AquaLife Web &amp; API</text>
+    <foreignObject x="15" y="80" width="220" height="50">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:sans-serif;font-size:11px;color:#8b949e;line-height:1.4;">
+        Automated aquarium management system for monitoring parameters and analytics.
+      </div>
+    </foreignObject>
+    <circle cx="20" cy="140" r="4" fill="#339933"/>
+    <text x="30" y="143" class="tag">Node.js • MongoDB</text>
+  </g>
+
+  <!-- Card 3 -->
+  <g transform="translate(605, 60)" class="card" style="animation-delay:0.5s">
+    <rect width="250" height="150" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <rect x="15" y="15" width="30" height="30" rx="6" fill="#ec4899" fill-opacity="0.1"/>
+    <text x="30" y="35" text-anchor="middle" font-size="14">🎵</text>
+    <rect x="205" y="15" width="35" height="18" rx="9" fill="#1f2937"/>
+    <text x="222" y="27" text-anchor="middle" fill="#8b949e" font-size="9" font-family="sans-serif">Tool</text>
+    <text x="15" y="70" class="title">TikTok Downloader</text>
+    <foreignObject x="15" y="80" width="220" height="50">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:sans-serif;font-size:11px;color:#8b949e;line-height:1.4;">
+        High-speed video downloading tool and media scraper supporting batch extractions.
+      </div>
+    </foreignObject>
+    <circle cx="20" cy="140" r="4" fill="#3178c6"/>
+    <text x="30" y="143" class="tag">TypeScript • Scraper</text>
+  </g>
+
+</svg>
