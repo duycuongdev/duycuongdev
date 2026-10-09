@@ -2,23 +2,20 @@
   <img src="./banner.svg" alt="Banner" width="100%" />
 </p>
 
+---
+
+## 🚀 Featured Projects
+
 <p align="center">
-  <a href="https://www.facebook.com/duy.cuong.951409">
-    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook Badge"/>
-  </a>
-  <a href="https://www.instagram.com/nguyenduycuong1900/">
-    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram Badge"/>
-  </a>
+  <img src="./projects.svg" alt="Featured Projects" width="100%" />
 </p>
 
 ---
 
-## 🛠️ Skills & Tools
+## 💻 Skills & Tech Stack
 
 <p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nodejs,express,mongodb,mysql,git,github,vscode&perline=8" alt="Skills Icons" />
-  </a>
+  <img src="./skills.svg" alt="Skills & Tech Stack" width="100%" />
 </p>
 
 ---
@@ -36,7 +33,7 @@
 
 ---
 
-## 🏆 Trophies
+## 🏆 Trophies & Achievements
 
 <p align="center">
   <a href="https://github.com/ryo-ma/github-profile-trophy">
