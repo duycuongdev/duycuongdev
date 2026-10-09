@@ -133,6 +133,6 @@
     <circle cx="900" cy="0" r="4" fill="#7c3aed" opacity="0.9"/>
     <circle cx="0" cy="420" r="4" fill="#7c3aed" opacity="0.9"/>
     <circle cx="900" cy="420" r="4" fill="#2f80ed" opacity="0.9"/>
+    <rect x="0" y="-100" width="900" height="100" fill="url(#scan)"><animateTransform attributeName="transform" type="translate" values="0,0;0,520" dur="5s" repeatCount="indefinite"/></rect>
   </g>
 </svg>
-    <rect x="0" y="-100" width="900" height="100" fill="url(#scan)"><animateTransform attributeName="transform" type="translate" values="0,0;0,520" dur="5s" repeatCount="indefinite"/></rect>
