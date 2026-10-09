@@ -26,103 +26,113 @@
     <ellipse cx="450" cy="70" rx="300" ry="150" fill="url(#a3)"><animate attributeName="ry" values="150;190;150" dur="7s" repeatCount="indefinite"/></ellipse>
     <ellipse cx="450" cy="395" rx="350" ry="110" fill="url(#a4)"><animate attributeName="rx" values="350;400;350" dur="9s" repeatCount="indefinite"/></ellipse>
     <g stroke="#2f80ed" stroke-width="0.5" opacity="0.07">
-      <line x1="0" y1="84" x2="900" y2="84"/><line x1="0" y1="168" x2="900" y2="168"/><line x1="0" y1="252" x2="900" y2="252"/><line x1="0" y1="336" x2="900" y2="336"/>
-      <line x1="90" y1="0" x2="90" y2="420"/><line x1="180" y1="0" x2="180" y2="420"/><line x1="270" y1="0" x2="270" y2="420"/><line x1="360" y1="0" x2="360" y2="420"/>
-      <line x1="450" y1="0" x2="450" y2="420"/><line x1="540" y1="0" x2="540" y2="420"/><line x1="630" y1="0" x2="630" y2="420"/><line x1="720" y1="0" x2="720" y2="420"/><line x1="810" y1="0" x2="810" y2="420"/>
+      <line x1="0" y1="84" x2="900" y2="84"/><line x1="0" y1="168" x2="900" y2="168"/>
+      <line x1="0" y1="252" x2="900" y2="252"/><line x1="0" y1="336" x2="900" y2="336"/>
+      <line x1="150" y1="0" x2="150" y2="420"/><line x1="300" y1="0" x2="300" y2="420"/>
+      <line x1="450" y1="0" x2="450" y2="420"/><line x1="600" y1="0" x2="600" y2="420"/>
+      <line x1="750" y1="0" x2="750" y2="420"/>
     </g>
-    <line x1="0" y1="210" x2="900" y2="210" stroke="#2f80ed" stroke-width="1" opacity="0.08"><animate attributeName="opacity" values="0.04;0.18;0.04" dur="3.5s" repeatCount="indefinite"/></line>
-    <g fill="#fff" opacity="0.55" filter="url(#stg)">
-      <circle cx="47" cy="23" r="0.9"/><circle cx="103" cy="67" r="0.7"/><circle cx="158" cy="14" r="1.1"/><circle cx="231" cy="55" r="0.8"/><circle cx="289" cy="28" r="1.0"/><circle cx="342" cy="78" r="0.7"/>
-      <circle cx="401" cy="18" r="0.9"/><circle cx="463" cy="44" r="1.2"/><circle cx="519" cy="11" r="0.8"/><circle cx="577" cy="59" r="1.0"/><circle cx="634" cy="25" r="0.7"/><circle cx="691" cy="48" r="1.1"/>
-      <circle cx="748" cy="17" r="0.9"/><circle cx="812" cy="63" r="0.8"/><circle cx="861" cy="30" r="1.0"/><circle cx="38" cy="100" r="0.7"/><circle cx="91" cy="122" r="0.9"/><circle cx="144" cy="96" r="0.8"/>
-      <circle cx="200" cy="148" r="0.6"/><circle cx="260" cy="110" r="1.0"/><circle cx="320" cy="133" r="0.7"/><circle cx="378" cy="103" r="0.9"/><circle cx="437" cy="141" r="0.8"/><circle cx="497" cy="114" r="0.7"/>
-      <circle cx="556" cy="132" r="1.0"/><circle cx="615" cy="107" r="0.8"/><circle cx="675" cy="125" r="0.6"/><circle cx="733" cy="99" r="0.9"/><circle cx="793" cy="119" r="0.7"/><circle cx="851" cy="131" r="0.8"/>
-      <circle cx="73" cy="195" r="0.7"/><circle cx="128" cy="212" r="0.9"/><circle cx="181" cy="178" r="0.8"/><circle cx="240" cy="228" r="1.0"/><circle cx="298" cy="200" r="0.7"/><circle cx="358" cy="215" r="0.9"/>
-      <circle cx="416" cy="186" r="0.8"/><circle cx="475" cy="233" r="0.6"/><circle cx="533" cy="204" r="1.0"/><circle cx="592" cy="219" r="0.7"/><circle cx="650" cy="191" r="0.9"/><circle cx="710" cy="238" r="0.8"/>
-      <circle cx="769" cy="210" r="0.7"/><circle cx="828" cy="225" r="1.0"/><circle cx="877" cy="197" r="0.8"/><circle cx="55" cy="280" r="0.7"/><circle cx="113" cy="298" r="0.9"/><circle cx="169" cy="272" r="0.8"/>
-      <circle cx="227" cy="315" r="1.0"/><circle cx="285" cy="287" r="0.7"/><circle cx="344" cy="305" r="0.9"/><circle cx="403" cy="278" r="0.8"/><circle cx="462" cy="320" r="0.6"/><circle cx="520" cy="292" r="1.0"/>
-      <circle cx="579" cy="308" r="0.7"/><circle cx="638" cy="281" r="0.9"/><circle cx="697" cy="325" r="0.8"/><circle cx="756" cy="298" r="0.7"/><circle cx="815" cy="312" r="1.0"/><circle cx="863" cy="286" r="0.8"/>
-      <circle cx="65" cy="370" r="0.7"/><circle cx="122" cy="388" r="0.9"/><circle cx="179" cy="358" r="0.8"/><circle cx="240" cy="400" r="0.6"/><circle cx="298" cy="372" r="1.0"/><circle cx="358" cy="392" r="0.7"/>
-      <circle cx="417" cy="362" r="0.9"/><circle cx="477" cy="405" r="0.8"/><circle cx="537" cy="378" r="0.7"/><circle cx="597" cy="395" r="1.0"/><circle cx="657" cy="368" r="0.8"/><circle cx="718" cy="408" r="0.7"/>
-      <circle cx="778" cy="382" r="0.9"/><circle cx="838" cy="398" r="0.8"/><circle cx="877" cy="370" r="0.7"/>
+    <!-- Twinkling stars -->
+    <g fill="#ffffff">
+      <circle cx="42" cy="28" r="1.2"><animate attributeName="opacity" values="0;1;0" dur="2.3s" begin="0.1s" repeatCount="indefinite"/></circle>
+      <circle cx="130" cy="55" r="1.0"><animate attributeName="opacity" values="0;1;0" dur="3.1s" begin="0.7s" repeatCount="indefinite"/></circle>
+      <circle cx="220" cy="18" r="1.4"><animate attributeName="opacity" values="0;0.8;0" dur="1.9s" begin="1.2s" repeatCount="indefinite"/></circle>
+      <circle cx="340" cy="40" r="0.9"><animate attributeName="opacity" values="0;1;0" dur="2.7s" begin="0.3s" repeatCount="indefinite"/></circle>
+      <circle cx="480" cy="22" r="1.1"><animate attributeName="opacity" values="0;0.9;0" dur="3.5s" begin="0.9s" repeatCount="indefinite"/></circle>
+      <circle cx="600" cy="14" r="1.3"><animate attributeName="opacity" values="0;1;0" dur="2.1s" begin="1.5s" repeatCount="indefinite"/></circle>
+      <circle cx="720" cy="38" r="1.0"><animate attributeName="opacity" values="0;0.7;0" dur="2.8s" begin="0.5s" repeatCount="indefinite"/></circle>
+      <circle cx="810" cy="20" r="1.2"><animate attributeName="opacity" values="0;1;0" dur="3.3s" begin="1.1s" repeatCount="indefinite"/></circle>
+      <circle cx="865" cy="60" r="0.8"><animate attributeName="opacity" values="0;0.9;0" dur="1.7s" begin="0.2s" repeatCount="indefinite"/></circle>
+      <circle cx="75" cy="380" r="1.0"><animate attributeName="opacity" values="0;1;0" dur="2.5s" begin="0.8s" repeatCount="indefinite"/></circle>
+      <circle cx="870" cy="370" r="1.1"><animate attributeName="opacity" values="0;0.8;0" dur="3.0s" begin="1.4s" repeatCount="indefinite"/></circle>
     </g>
-    <circle cx="158" cy="14" r="1.4" fill="#bae6fd" filter="url(#stg)"><animate attributeName="opacity" values="1;0.1;1" dur="2.3s" repeatCount="indefinite"/><animate attributeName="r" values="1.4;2.6;1.4" dur="2.3s" repeatCount="indefinite"/></circle>
-    <circle cx="463" cy="44" r="1.6" fill="#c4b5fd" filter="url(#stg)"><animate attributeName="opacity" values="0.9;0.05;0.9" dur="3.1s" repeatCount="indefinite"/><animate attributeName="r" values="1.6;3.0;1.6" dur="3.1s" repeatCount="indefinite"/></circle>
-    <circle cx="748" cy="17" r="1.4" fill="#93c5fd" filter="url(#stg)"><animate attributeName="opacity" values="1;0.2;1" dur="1.9s" repeatCount="indefinite"/><animate attributeName="r" values="1.4;2.4;1.4" dur="1.9s" repeatCount="indefinite"/></circle>
-    <circle cx="556" cy="132" r="1.5" fill="#bae6fd" filter="url(#stg)"><animate attributeName="opacity" values="0.9;0.1;0.9" dur="2.7s" repeatCount="indefinite"/><animate attributeName="r" values="1.5;2.8;1.5" dur="2.7s" repeatCount="indefinite"/></circle>
-    <circle cx="289" cy="28" r="1.3" fill="#fde68a" filter="url(#stg)"><animate attributeName="opacity" values="1;0.15;1" dur="3.5s" repeatCount="indefinite"/><animate attributeName="r" values="1.3;2.5;1.3" dur="3.5s" repeatCount="indefinite"/></circle>
-    <circle cx="812" cy="63" r="1.5" fill="#c4b5fd" filter="url(#stg)"><animate attributeName="opacity" values="0.8;0.05;0.8" dur="2.1s" repeatCount="indefinite"/><animate attributeName="r" values="1.5;2.7;1.5" dur="2.1s" repeatCount="indefinite"/></circle>
-    <circle cx="122" cy="388" r="1.4" fill="#6ee7b7" filter="url(#stg)"><animate attributeName="opacity" values="1;0.2;1" dur="4.0s" repeatCount="indefinite"/><animate attributeName="r" values="1.4;2.6;1.4" dur="4.0s" repeatCount="indefinite"/></circle>
-    <circle cx="638" cy="281" r="1.6" fill="#fca5a5" filter="url(#stg)"><animate attributeName="opacity" values="0.85;0.1;0.85" dur="2.8s" repeatCount="indefinite"/><animate attributeName="r" values="1.6;3.0;1.6" dur="2.8s" repeatCount="indefinite"/></circle>
-    <circle cx="477" cy="405" r="1.3" fill="#a5f3fc" filter="url(#stg)"><animate attributeName="opacity" values="0.9;0.1;0.9" dur="3.3s" repeatCount="indefinite"/><animate attributeName="r" values="1.3;2.4;1.3" dur="3.3s" repeatCount="indefinite"/></circle>
-    <circle cx="80" cy="370" r="5" fill="#2f80ed" opacity="0.65" filter="url(#sg)"><animate attributeName="cy" values="370;335;370" dur="5.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.65;1;0.65" dur="5.5s" repeatCount="indefinite"/></circle>
-    <circle cx="170" cy="300" r="3.5" fill="#7c3aed" opacity="0.55" filter="url(#sg)"><animate attributeName="cy" values="300;268;300" dur="6.5s" repeatCount="indefinite"/><animate attributeName="cx" values="170;185;170" dur="6.5s" repeatCount="indefinite"/></circle>
-    <circle cx="820" cy="355" r="6" fill="#2f80ed" opacity="0.45" filter="url(#sg)"><animate attributeName="cy" values="355;320;355" dur="7.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.45;0.85;0.45" dur="7.5s" repeatCount="indefinite"/></circle>
-    <circle cx="745" cy="270" r="4" fill="#0891b2" opacity="0.55" filter="url(#sg)"><animate attributeName="cy" values="270;240;270" dur="6s" repeatCount="indefinite"/><animate attributeName="cx" values="745;762;745" dur="6s" repeatCount="indefinite"/></circle>
-    <circle cx="450" cy="385" r="3" fill="#a78bfa" opacity="0.45" filter="url(#sg)"><animate attributeName="cy" values="385;358;385" dur="5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.45;0.80;0.45" dur="5s" repeatCount="indefinite"/></circle>
-    <circle cx="340" cy="350" r="2.5" fill="#38bdf8" opacity="0.40" filter="url(#sg)"><animate attributeName="cy" values="350;325;350" dur="7s" repeatCount="indefinite"/></circle>
-    <circle cx="570" cy="340" r="3.5" fill="#34d399" opacity="0.38" filter="url(#sg)"><animate attributeName="cy" values="340;312;340" dur="6.2s" repeatCount="indefinite"/></circle>
-    <circle cx="250" cy="400" r="2.8" fill="#f472b6" opacity="0.30" filter="url(#sg)"><animate attributeName="cy" values="400;375;400" dur="8s" repeatCount="indefinite"/></circle>
-    <circle cx="660" cy="395" r="2.2" fill="#fbbf24" opacity="0.32" filter="url(#sg)"><animate attributeName="cy" values="395;372;395" dur="5.8s" repeatCount="indefinite"/></circle>
-    <g font-family="'Courier New',monospace" font-size="12" fill="#2f80ed" text-anchor="middle">
-      <text x="862" opacity="0.0">
-        <tspan x="862" dy="0">01</tspan><tspan x="862" dy="18">10</tspan><tspan x="862" dy="18">11</tspan><tspan x="862" dy="18">00</tspan><tspan x="862" dy="18">01</tspan><tspan x="862" dy="18">10</tspan><tspan x="862" dy="18">01</tspan><tspan x="862" dy="18">11</tspan><tspan x="862" dy="18">00</tspan><tspan x="862" dy="18">10</tspan><tspan x="862" dy="18">01</tspan><tspan x="862" dy="18">11</tspan><tspan x="862" dy="18">10</tspan><tspan x="862" dy="18">00</tspan><tspan x="862" dy="18">01</tspan><tspan x="862" dy="18">10</tspan><tspan x="862" dy="18">11</tspan><tspan x="862" dy="18">00</tspan><tspan x="862" dy="18">01</tspan><tspan x="862" dy="18">10</tspan><tspan x="862" dy="18">11</tspan><tspan x="862" dy="18">00</tspan><tspan x="862" dy="18">01</tspan>
-        <animate attributeName="opacity" values="0.0;0.15;0.22;0.15;0.0" dur="6s" repeatCount="indefinite"/>
-      </text>
-      <text x="884" opacity="0.0">
-        <tspan x="884" dy="0">11</tspan><tspan x="884" dy="18">01</tspan><tspan x="884" dy="18">00</tspan><tspan x="884" dy="18">10</tspan><tspan x="884" dy="18">11</tspan><tspan x="884" dy="18">01</tspan><tspan x="884" dy="18">10</tspan><tspan x="884" dy="18">00</tspan><tspan x="884" dy="18">11</tspan><tspan x="884" dy="18">01</tspan><tspan x="884" dy="18">00</tspan><tspan x="884" dy="18">10</tspan><tspan x="884" dy="18">11</tspan><tspan x="884" dy="18">01</tspan><tspan x="884" dy="18">10</tspan><tspan x="884" dy="18">00</tspan><tspan x="884" dy="18">01</tspan><tspan x="884" dy="18">11</tspan><tspan x="884" dy="18">10</tspan><tspan x="884" dy="18">00</tspan><tspan x="884" dy="18">01</tspan><tspan x="884" dy="18">11</tspan><tspan x="884" dy="18">10</tspan>
-        <animate attributeName="opacity" values="0.0;0.12;0.18;0.12;0.0" dur="7.5s" repeatCount="indefinite" begin="1.5s"/>
-      </text>
-    </g>
-    <g font-family="'Courier New',monospace" font-size="12" fill="#7c3aed" text-anchor="middle">
-      <text x="18" opacity="0.0">
-        <tspan x="18" dy="0">10</tspan><tspan x="18" dy="18">01</tspan><tspan x="18" dy="18">11</tspan><tspan x="18" dy="18">00</tspan><tspan x="18" dy="18">10</tspan><tspan x="18" dy="18">11</tspan><tspan x="18" dy="18">01</tspan><tspan x="18" dy="18">00</tspan><tspan x="18" dy="18">10</tspan><tspan x="18" dy="18">01</tspan><tspan x="18" dy="18">11</tspan><tspan x="18" dy="18">00</tspan><tspan x="18" dy="18">10</tspan><tspan x="18" dy="18">11</tspan><tspan x="18" dy="18">01</tspan><tspan x="18" dy="18">00</tspan><tspan x="18" dy="18">10</tspan><tspan x="18" dy="18">01</tspan><tspan x="18" dy="18">11</tspan><tspan x="18" dy="18">00</tspan><tspan x="18" dy="18">10</tspan><tspan x="18" dy="18">11</tspan><tspan x="18" dy="18">01</tspan>
-        <animate attributeName="opacity" values="0.0;0.13;0.20;0.13;0.0" dur="7s" repeatCount="indefinite" begin="0.8s"/>
-      </text>
-      <text x="40" opacity="0.0">
-        <tspan x="40" dy="0">01</tspan><tspan x="40" dy="18">11</tspan><tspan x="40" dy="18">00</tspan><tspan x="40" dy="18">10</tspan><tspan x="40" dy="18">01</tspan><tspan x="40" dy="18">00</tspan><tspan x="40" dy="18">11</tspan><tspan x="40" dy="18">10</tspan><tspan x="40" dy="18">01</tspan><tspan x="40" dy="18">11</tspan><tspan x="40" dy="18">00</tspan><tspan x="40" dy="18">10</tspan><tspan x="40" dy="18">01</tspan><tspan x="40" dy="18">00</tspan><tspan x="40" dy="18">11</tspan><tspan x="40" dy="18">10</tspan><tspan x="40" dy="18">01</tspan><tspan x="40" dy="18">11</tspan><tspan x="40" dy="18">00</tspan><tspan x="40" dy="18">10</tspan><tspan x="40" dy="18">01</tspan><tspan x="40" dy="18">11</tspan><tspan x="40" dy="18">00</tspan>
-        <animate attributeName="opacity" values="0.0;0.11;0.16;0.11;0.0" dur="5.5s" repeatCount="indefinite" begin="2.2s"/>
-      </text>
-    </g>
-    <text x="450" y="102" text-anchor="middle" font-family="'Courier New',monospace" font-size="14" fill="#475569" letter-spacing="4">
-      👋 &lt; Xin chào! I'm /&gt;
-      <animate attributeName="opacity" values="0.5;1;0.5" dur="3.5s" repeatCount="indefinite"/>
+    <!-- Code tag div: no space inside brackets -->
+    <text x="450" y="80" text-anchor="middle" font-family="'Courier New',monospace" font-size="16" opacity="0">
+      <animate attributeName="opacity" values="0;1;1" dur="0.8s" fill="freeze" begin="0.5s"/>
+      <animateTransform attributeName="transform" type="translate" values="0,10;0,0;0,0" dur="0.8s" fill="freeze" begin="0.5s"/>
+      <tspan fill="#475569">&lt;</tspan><tspan fill="#38bdf8">div</tspan><tspan fill="#475569">&gt;</tspan><tspan fill="#e2e8f0"> Hello there, </tspan><tspan fill="#475569">&lt;/</tspan><tspan fill="#38bdf8">div</tspan><tspan fill="#475569">&gt;</tspan>
     </text>
-    <text x="450" y="188" text-anchor="middle" font-family="'Segoe UI','Inter','Helvetica Neue',Arial,sans-serif" font-size="70" font-weight="900" letter-spacing="3" fill="url(#nameGrad)" filter="url(#ns)">Duy Cường</text>
-    <rect x="450" y="200" width="0" height="3" rx="1.5" fill="url(#bdr)">
-      <animate attributeName="width" values="0;500;500;0" dur="5.5s" begin="0.3s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1;0 0 1 1;0.4 0 0.2 1"/>
-      <animate attributeName="x" values="450;200;200;450" dur="5.5s" begin="0.3s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1;0 0 1 1;0.4 0 0.2 1"/>
-    </rect>
-    <text x="450" y="234" text-anchor="middle" font-family="'Segoe UI','Inter',Arial,sans-serif" font-size="19" font-weight="500" letter-spacing="1.5" fill="url(#subGrad)">Full-Stack Developer  ·  PTIT Student</text>
-    <text x="450" y="264" text-anchor="middle" font-family="'Segoe UI','Inter',Arial,sans-serif" font-size="13.5" fill="#64748b" letter-spacing="0.4">Building web apps with JavaScript &amp; TypeScript  ·  Passionate about clean code &amp; great UX</text>
-    <g font-family="'Courier New',monospace" font-size="12">
-      <rect x="161" y="284" width="82"  height="26" rx="13" fill="#f7df1e" opacity="0.12"/><rect x="161" y="284" width="82"  height="26" rx="13" fill="none" stroke="#f7df1e" stroke-width="0.8" opacity="0.55"/>
-      <text x="202" y="301" text-anchor="middle" fill="#fbbf24">JS · Node.js</text>
-      <rect x="253" y="284" width="90"  height="26" rx="13" fill="#3178c6" opacity="0.12"/><rect x="253" y="284" width="90"  height="26" rx="13" fill="none" stroke="#3178c6" stroke-width="0.8" opacity="0.55"/>
-      <text x="298" y="301" text-anchor="middle" fill="#93c5fd">TypeScript</text>
-      <rect x="353" y="284" width="80"  height="26" rx="13" fill="#61dafb" opacity="0.12"/><rect x="353" y="284" width="80"  height="26" rx="13" fill="none" stroke="#61dafb" stroke-width="0.8" opacity="0.55"/>
-      <text x="393" y="301" text-anchor="middle" fill="#67e8f9">⚛ React</text>
-      <rect x="443" y="284" width="82"  height="26" rx="13" fill="#22c55e" opacity="0.12"/><rect x="443" y="284" width="82"  height="26" rx="13" fill="none" stroke="#22c55e" stroke-width="0.8" opacity="0.55"/>
-      <text x="484" y="301" text-anchor="middle" fill="#86efac">Express</text>
-      <rect x="535" y="284" width="84"  height="26" rx="13" fill="#16a34a" opacity="0.12"/><rect x="535" y="284" width="84"  height="26" rx="13" fill="none" stroke="#16a34a" stroke-width="0.8" opacity="0.55"/>
-      <text x="577" y="301" text-anchor="middle" fill="#6ee7b7">MongoDB</text>
-      <rect x="629" y="284" width="60"  height="26" rx="13" fill="#f97316" opacity="0.12"/><rect x="629" y="284" width="60"  height="26" rx="13" fill="none" stroke="#f97316" stroke-width="0.8" opacity="0.55"/>
-      <text x="659" y="301" text-anchor="middle" fill="#fdba74">Git</text>
+    <!-- Main name with float-in -->
+    <text x="450" y="145" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-weight="800" font-size="52" fill="url(#nameGrad)" filter="url(#ns)" opacity="0">
+      <animate attributeName="opacity" values="0;1;1" dur="1s" fill="freeze" begin="1s"/>
+      <animateTransform attributeName="transform" type="translate" values="0,15;0,0;0,0" dur="1s" fill="freeze" begin="1s"/>
+      I'm <tspan fill="#ffffff">Duy Cuong</tspan> Dev
+    </text>
+    <!-- Subtitle -->
+    <text x="450" y="175" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="16.5" fill="url(#subGrad)" letter-spacing="3" opacity="0">
+      <animate attributeName="opacity" values="0;0.85;0.85" dur="0.8s" fill="freeze" begin="1.6s"/>
+      <animateTransform attributeName="transform" type="translate" values="0,8;0,0;0,0" dur="0.8s" fill="freeze" begin="1.6s"/>
+      Full Stack Developer
+    </text>
+    <!-- Tech Stack comment -->
+    <text x="155" y="240" font-family="'Courier New',monospace" font-size="11" fill="#475569" opacity="0">
+      <animate attributeName="opacity" values="0;0.7;0.7" dur="0.5s" fill="freeze" begin="2s"/>
+      // Tech Stack
+    </text>
+
+    <!-- Skills badges -->
+    <g font-family="'Segoe UI',Arial,sans-serif" font-size="11.5" opacity="0">
+      <animate attributeName="opacity" values="0;1;1" dur="0.7s" fill="freeze" begin="2.2s"/>
+      <animateTransform attributeName="transform" type="translate" values="0,10;0,0;0,0" dur="0.7s" fill="freeze" begin="2.2s"/>
+      <rect x="155" y="248" width="54" height="26" rx="13" fill="#1e40af" opacity="0.20"/><rect x="155" y="248" width="54" height="26" rx="13" fill="none" stroke="#3b82f6" stroke-width="0.8" opacity="0.60"/>
+      <text x="182" y="265" text-anchor="middle" fill="#93c5fd">HTML</text>
+      <rect x="218" y="248" width="46" height="26" rx="13" fill="#1e40af" opacity="0.20"/><rect x="218" y="248" width="46" height="26" rx="13" fill="none" stroke="#3b82f6" stroke-width="0.8" opacity="0.60"/>
+      <text x="241" y="265" text-anchor="middle" fill="#93c5fd">CSS</text>
+      <rect x="273" y="248" width="62" height="26" rx="13" fill="#713f12" opacity="0.20"/><rect x="273" y="248" width="62" height="26" rx="13" fill="none" stroke="#f59e0b" stroke-width="0.8" opacity="0.55"/>
+      <text x="304" y="265" text-anchor="middle" fill="#fde68a">JS</text>
+      <rect x="344" y="248" width="74" height="26" rx="13" fill="#1e3a8a" opacity="0.20"/><rect x="344" y="248" width="74" height="26" rx="13" fill="none" stroke="#60a5fa" stroke-width="0.8" opacity="0.55"/>
+      <text x="381" y="265" text-anchor="middle" fill="#bfdbfe">TypeScript</text>
+      <rect x="427" y="248" width="56" height="26" rx="13" fill="#0c4a6e" opacity="0.20"/><rect x="427" y="248" width="56" height="26" rx="13" fill="none" stroke="#38bdf8" stroke-width="0.8" opacity="0.55"/>
+      <text x="455" y="265" text-anchor="middle" fill="#7dd3fc">React</text>
+      <rect x="492" y="248" width="74" height="26" rx="13" fill="#14532d" opacity="0.20"/><rect x="492" y="248" width="74" height="26" rx="13" fill="none" stroke="#22c55e" stroke-width="0.8" opacity="0.55"/>
+      <text x="529" y="265" text-anchor="middle" fill="#86efac">Node.js</text>
+      <rect x="575" y="248" width="74" height="26" rx="13" fill="#14532d" opacity="0.20"/><rect x="575" y="248" width="74" height="26" rx="13" fill="none" stroke="#22c55e" stroke-width="0.8" opacity="0.55"/>
+      <text x="612" y="265" text-anchor="middle" fill="#86efac">Express</text>
+      <rect x="658" y="248" width="84" height="26" rx="13" fill="#14532d" opacity="0.12"/><rect x="658" y="248" width="84" height="26" rx="13" fill="none" stroke="#16a34a" stroke-width="0.8" opacity="0.55"/>
+      <text x="700" y="265" text-anchor="middle" fill="#6ee7b7">MongoDB</text>
+      <rect x="751" y="248" width="48" height="26" rx="13" fill="#431407" opacity="0.20"/><rect x="751" y="248" width="48" height="26" rx="13" fill="none" stroke="#f97316" stroke-width="0.8" opacity="0.55"/>
+      <text x="775" y="265" text-anchor="middle" fill="#fdba74">Git</text>
     </g>
-    <rect x="155" y="326" width="182" height="54" rx="10" fill="#0d1117" opacity="0.75"/><rect x="155" y="326" width="182" height="54" rx="10" fill="none" stroke="#2f80ed" stroke-width="0.8" opacity="0.45"/>
-    <text x="246" y="345" text-anchor="middle" font-family="'Courier New',monospace" font-size="11.5" fill="#60a5fa">📋 Trello_Web &amp; API</text>
-    <text x="246" y="362" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10.5" fill="#64748b">React · JavaScript · REST API</text>
-    <text x="246" y="375" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#475569">Project management app clone</text>
-    <rect x="356" y="326" width="188" height="54" rx="10" fill="#0d1117" opacity="0.75"/><rect x="356" y="326" width="188" height="54" rx="10" fill="none" stroke="#7c3aed" stroke-width="0.8" opacity="0.45"/>
-    <text x="450" y="345" text-anchor="middle" font-family="'Courier New',monospace" font-size="11.5" fill="#a78bfa">🐠 AquaLife Web &amp; API</text>
-    <text x="450" y="362" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10.5" fill="#64748b">JavaScript · Node.js · MongoDB</text>
-    <text x="450" y="375" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#475569">Aquarium management system</text>
-    <rect x="563" y="326" width="182" height="54" rx="10" fill="#0d1117" opacity="0.75"/><rect x="563" y="326" width="182" height="54" rx="10" fill="none" stroke="#0891b2" stroke-width="0.8" opacity="0.45"/>
-    <text x="654" y="345" text-anchor="middle" font-family="'Courier New',monospace" font-size="11.5" fill="#38bdf8">🎵 TikTok Downloader</text>
-    <text x="654" y="362" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10.5" fill="#64748b">TypeScript · Web Scraping</text>
-    <text x="654" y="375" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#475569">Video download tool</text>
+
+    <!-- Project card 1 -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1;1" dur="0.6s" fill="freeze" begin="2.8s"/>
+      <animateTransform attributeName="transform" type="translate" values="0,14;0,0;0,0" dur="0.6s" fill="freeze" begin="2.8s"/>
+      <rect x="115" y="295" width="200" height="60" rx="10" fill="#0d1117" opacity="0.80"/>
+      <rect x="115" y="295" width="200" height="60" rx="10" fill="none" stroke="#2f80ed" stroke-width="0.8" opacity="0.45"/>
+      <text x="215" y="314" text-anchor="middle" font-family="'Courier New',monospace" font-size="11.5" fill="#60a5fa">&#128203; Trello_Web &amp; API</text>
+      <text x="215" y="331" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10.5" fill="#64748b">React, JavaScript, REST API</text>
+      <text x="215" y="346" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#475569">Project management app clone</text>
+    </g>
+    <!-- Project card 2 -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1;1" dur="0.6s" fill="freeze" begin="3.1s"/>
+      <animateTransform attributeName="transform" type="translate" values="0,14;0,0;0,0" dur="0.6s" fill="freeze" begin="3.1s"/>
+      <rect x="328" y="295" width="200" height="60" rx="10" fill="#0d1117" opacity="0.80"/>
+      <rect x="328" y="295" width="200" height="60" rx="10" fill="none" stroke="#7c3aed" stroke-width="0.8" opacity="0.45"/>
+      <text x="428" y="314" text-anchor="middle" font-family="'Courier New',monospace" font-size="11.5" fill="#a78bfa">&#128032; AquaLife Web &amp; API</text>
+      <text x="428" y="331" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10.5" fill="#64748b">JavaScript, Node.js, MongoDB</text>
+      <text x="428" y="346" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#475569">Aquarium management system</text>
+    </g>
+    <!-- Project card 3 -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1;1" dur="0.6s" fill="freeze" begin="3.4s"/>
+      <animateTransform attributeName="transform" type="translate" values="0,14;0,0;0,0" dur="0.6s" fill="freeze" begin="3.4s"/>
+      <rect x="541" y="295" width="200" height="60" rx="10" fill="#0d1117" opacity="0.80"/>
+      <rect x="541" y="295" width="200" height="60" rx="10" fill="none" stroke="#0891b2" stroke-width="0.8" opacity="0.45"/>
+      <text x="641" y="314" text-anchor="middle" font-family="'Courier New',monospace" font-size="11.5" fill="#38bdf8">&#127925; TikTok Downloader</text>
+      <text x="641" y="331" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10.5" fill="#64748b">TypeScript, Web Scraping</text>
+      <text x="641" y="346" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#475569">Video download tool</text>
+    </g>
+    <!-- Info row -->
+    <text x="450" y="388" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11.5" fill="#64748b" opacity="0">
+      <animate attributeName="opacity" values="0;0.7;0.7" dur="0.6s" fill="freeze" begin="3.7s"/>
+      &#128205; Vietnam  ·  &#127760; github.com/duycuongdev  ·  &#128188; Open to work
+    </text>
+    <!-- Top and bottom borders -->
     <rect x="0" y="0" width="900" height="4" fill="url(#bdr)" rx="1"><animate attributeName="opacity" values="0.6;1;0.6" dur="3.2s" repeatCount="indefinite"/></rect>
     <rect x="0" y="416" width="900" height="4" fill="url(#bdr)" rx="1"><animate attributeName="opacity" values="0.4;0.9;0.4" dur="3.8s" repeatCount="indefinite"/></rect>
+    <!-- Corner accents -->
     <path d="M0,36 L0,0 L36,0" fill="none" stroke="#2f80ed" stroke-width="2" opacity="0.7"/>
     <path d="M864,0 L900,0 L900,36" fill="none" stroke="#7c3aed" stroke-width="2" opacity="0.7"/>
     <path d="M0,384 L0,420 L36,420" fill="none" stroke="#7c3aed" stroke-width="2" opacity="0.7"/>
@@ -131,6 +141,8 @@
     <circle cx="900" cy="0" r="4" fill="#7c3aed" opacity="0.9"/>
     <circle cx="0" cy="420" r="4" fill="#7c3aed" opacity="0.9"/>
     <circle cx="900" cy="420" r="4" fill="#2f80ed" opacity="0.9"/>
+    <!-- Scan line -->
     <rect x="0" y="-100" width="900" height="100" fill="url(#scan)"><animateTransform attributeName="transform" type="translate" values="0,0;0,520" dur="5s" repeatCount="indefinite"/></rect>
   </g>
 </svg>
+
