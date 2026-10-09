@@ -38,25 +38,31 @@
       <text x="870" y="30" text-anchor="end" font-family="monospace" font-size="10" fill="#334155" class="pulse">
         <tspan x="870" dy="0">10 01</tspan><tspan x="870" dy="14">11 00</tspan><tspan x="870" dy="14">00 11</tspan>
       </text>
-      <text x="450" y="90" text-anchor="middle" font-family="monospace" font-size="14" fill="#94a3b8" class="float">
-        <tspan fill="#475569">&lt;</tspan><tspan fill="#38bdf8">div</tspan><tspan fill="#475569">&gt;</tspan>Hello there,<tspan fill="#475569">&lt;/</tspan><tspan fill="#38bdf8">div</tspan><tspan fill="#475569">&gt;</tspan>
-      </text>
-      <text x="450" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="46" fill="#fff" class="glitch float">
-        I'm <tspan fill="url(#textGrad)">Duy Cuong</tspan> Dev
-      </text>
-      <g transform="translate(320, 175)" class="float">
-        <a class="btn" href="https://github.com/duycuongdev" target="_blank">
-          <rect x="0" y="0" width="80" height="30" rx="6" fill="#111827" stroke="#374151"/>
-          <text x="40" y="19" text-anchor="middle" font-family="Arial" font-size="12" fill="#fff" font-weight="bold">GitHub</text>
-        </a>
-        <a class="btn" href="https://www.facebook.com/duy.cuong.951409" target="_blank">
-          <rect x="90" y="0" width="85" height="30" rx="6" fill="#1e3a8a" stroke="#1e40af"/>
-          <text x="132" y="19" text-anchor="middle" font-family="Arial" font-size="12" fill="#fff" font-weight="bold">Facebook</text>
-        </a>
-        <a class="btn" href="https://www.instagram.com/nguyenduycuong1900/" target="_blank">
-          <rect x="185" y="0" width="85" height="30" rx="6" fill="#831843" stroke="#be185d"/>
-          <text x="227" y="19" text-anchor="middle" font-family="Arial" font-size="12" fill="#fff" font-weight="bold">Instagram</text>
-        </a>
+      <g class="float">
+        <text x="450" y="90" text-anchor="middle" font-family="monospace" font-size="14" fill="#94a3b8">
+          <tspan fill="#475569">&lt;</tspan><tspan fill="#38bdf8">div</tspan><tspan fill="#475569">&gt;</tspan>Hello there,<tspan fill="#475569">&lt;/</tspan><tspan fill="#38bdf8">div</tspan><tspan fill="#475569">&gt;</tspan>
+        </text>
+        <g class="glitch">
+          <text x="450" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="46" fill="#fff">
+            I'm <tspan fill="url(#textGrad)">Duy Cuong</tspan> Dev
+          </text>
+        </g>
+      </g>
+      <g transform="translate(315, 175)">
+        <g class="float">
+          <a class="btn" href="https://github.com/duycuongdev" target="_blank">
+            <rect x="0" y="0" width="80" height="30" rx="6" fill="#111827" stroke="#374151"/>
+            <text x="40" y="19" text-anchor="middle" font-family="Arial" font-size="12" fill="#fff" font-weight="bold">GitHub</text>
+          </a>
+          <a class="btn" href="https://www.facebook.com/duy.cuong.951409" target="_blank">
+            <rect x="90" y="0" width="85" height="30" rx="6" fill="#1e3a8a" stroke="#1e40af"/>
+            <text x="132" y="19" text-anchor="middle" font-family="Arial" font-size="12" fill="#fff" font-weight="bold">Facebook</text>
+          </a>
+          <a class="btn" href="https://www.instagram.com/nguyenduycuong1900/" target="_blank">
+            <rect x="185" y="0" width="85" height="30" rx="6" fill="#831843" stroke="#be185d"/>
+            <text x="227" y="19" text-anchor="middle" font-family="Arial" font-size="12" fill="#fff" font-weight="bold">Instagram</text>
+          </a>
+        </g>
       </g>
     </g>
   </svg>
