@@ -121,8 +121,6 @@
     <text x="654" y="345" text-anchor="middle" font-family="'Courier New',monospace" font-size="11.5" fill="#38bdf8">🎵 TikTok Downloader</text>
     <text x="654" y="362" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10.5" fill="#64748b">TypeScript · Web Scraping</text>
     <text x="654" y="375" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#475569">Video download tool</text>
-    <circle cx="450" cy="402" r="5.5" fill="#22c55e" filter="url(#sg)"><animate attributeName="r" values="5.5;8;5.5" dur="2.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0.4;1" dur="2.2s" repeatCount="indefinite"/></circle>
-    <text x="464" y="406" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#64748b" letter-spacing="0.4">🎓 PTIT  ·  Open to opportunities  ·  7 public repos</text>
     <rect x="0" y="0" width="900" height="4" fill="url(#bdr)" rx="1"><animate attributeName="opacity" values="0.6;1;0.6" dur="3.2s" repeatCount="indefinite"/></rect>
     <rect x="0" y="416" width="900" height="4" fill="url(#bdr)" rx="1"><animate attributeName="opacity" values="0.4;0.9;0.4" dur="3.8s" repeatCount="indefinite"/></rect>
     <path d="M0,36 L0,0 L36,0" fill="none" stroke="#2f80ed" stroke-width="2" opacity="0.7"/>
