@@ -1,37 +1,63 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="900" height="200">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="900" height="200">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0a0e17"/><stop offset="100%" stop-color="#0d1117"/></linearGradient>
-    <linearGradient id="bd" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#38bdf8" stop-opacity="0.5"/><stop offset="50%" stop-color="#818cf8" stop-opacity="0.3"/><stop offset="100%" stop-color="#e879f9" stop-opacity="0.5"/></linearGradient>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17"/><stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="bd" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#e879f9" stop-opacity="0.6"/>
+    </linearGradient>
     <style>
-      .icon { animation: up 0.5s ease forwards; opacity: 0; }
-      @keyframes up { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
-      .lbl { font-family: sans-serif; font-size: 10px; fill: #8b949e; text-anchor: middle; }
-      .hdr { font-family: sans-serif; font-size: 13px; font-weight: bold; fill: #38bdf8; letter-spacing: 2px; }
-      .tsm { font-family: monospace; font-size: 10px; font-weight: bold; text-anchor: middle; }
+      @keyframes popIn { 0%{opacity:0;transform:scale(0.7) translateY(12px)} 80%{transform:scale(1.05) translateY(-2px)} 100%{opacity:1;transform:scale(1) translateY(0)} }
+      @keyframes hg { 0%,100%{filter:drop-shadow(0 0 4px #38bdf8aa)} 50%{filter:drop-shadow(0 0 12px #818cf8cc)} }
+      .ic{animation:popIn .5s cubic-bezier(.34,1.56,.64,1) both}
+      .lbl{font-family:sans-serif;font-size:10px;fill:#8b949e;text-anchor:middle}
+      .hdr{font-family:sans-serif;font-size:13px;font-weight:bold;fill:#38bdf8;letter-spacing:2.5px;animation:hg 3s ease-in-out infinite}
+      .t{font-family:monospace;font-size:11px;font-weight:bold;text-anchor:middle}
     </style>
   </defs>
   <rect width="900" height="200" rx="12" fill="url(#bg)"/>
   <rect width="900" height="200" rx="12" fill="none" stroke="url(#bd)" stroke-width="1.5"/>
-  <text x="450" y="30" text-anchor="middle" class="hdr">&#x26a1; TECH STACK</text>
-  <line x1="60" y1="40" x2="840" y2="40" stroke="#1f2937" stroke-width="1"/>
-  <g transform="translate(45,55)" class="icon" style="animation-delay:.1s"><rect width="48" height="48" rx="10" fill="#F0DB4F" fill-opacity=".15" stroke="#F0DB4F" stroke-opacity=".4" stroke-width="1"/><text x="24" y="30" class="tsm" fill="#F0DB4F">JS</text></g><text x="69" y="118" class="lbl">JavaScript</text>
-  <g transform="translate(120,55)" class="icon" style="animation-delay:.15s"><rect width="48" height="48" rx="10" fill="#3178c6" fill-opacity=".15" stroke="#3178c6" stroke-opacity=".4" stroke-width="1"/><text x="24" y="30" class="tsm" fill="#3178c6">TS</text></g><text x="144" y="118" class="lbl">TypeScript</text>
-  <g transform="translate(195,55)" class="icon" style="animation-delay:.2s"><rect width="48" height="48" rx="10" fill="#61DAFB" fill-opacity=".15" stroke="#61DAFB" stroke-opacity=".4" stroke-width="1"/><text x="24" y="30" class="tsm" fill="#61DAFB">React</text></g><text x="219" y="118" class="lbl">React</text>
-  <g transform="translate(270,55)" class="icon" style="animation-delay:.25s"><rect width="48" height="48" rx="10" fill="#42b883" fill-opacity=".15" stroke="#42b883" stroke-opacity=".4" stroke-width="1"/><text x="24" y="30" class="tsm" fill="#42b883">Vue</text></g><text x="294" y="118" class="lbl">Vue.js</text>
-  <g transform="translate(345,55)" class="icon" style="animation-delay:.3s"><rect width="48" height="48" rx="10" fill="#339933" fill-opacity=".15" stroke="#339933" stroke-opacity=".4" stroke-width="1"/><text x="24" y="30" class="tsm" fill="#339933">Node</text></g><text x="369" y="118" class="lbl">Node.js</text>
-  <g transform="translate(420,55)" class="icon" style="animation-delay:.35s"><rect width="48" height="48" rx="10" fill="#3776AB" fill-opacity=".15" stroke="#3776AB" stroke-opacity=".4" stroke-width="1"/><text x="24" y="30" class="tsm" fill="#3776AB">Python</text></g><text x="444" y="118" class="lbl">Python</text>
-  <g transform="translate(495,55)" class="icon" style="animation-delay:.4s"><rect width="48" height="48" rx="10" fill="#00ACD7" fill-opacity=".15" stroke="#00ACD7" stroke-opacity=".4" stroke-width="1"/><text x="24" y="30" class="tsm" fill="#00ACD7">Go</text></g><text x="519" y="118" class="lbl">Go</text>
-  <g transform="translate(570,55)" class="icon" style="animation-delay:.45s"><rect width="48" height="48" rx="10" fill="#2496ED" fill-opacity=".15" stroke="#2496ED" stroke-opacity=".4" stroke-width="1"/><text x="24" y="30" class="tsm" fill="#2496ED">Docker</text></g><text x="594" y="118" class="lbl">Docker</text>
-  <g transform="translate(645,55)" class="icon" style="animation-delay:.5s"><rect width="48" height="48" rx="10" fill="#336791" fill-opacity=".15" stroke="#336791" stroke-opacity=".4" stroke-width="1"/><text x="24" y="30" class="tsm" fill="#336791">PG</text></g><text x="669" y="118" class="lbl">Postgres</text>
-  <g transform="translate(720,55)" class="icon" style="animation-delay:.55s"><rect width="48" height="48" rx="10" fill="#DC382D" fill-opacity=".15" stroke="#DC382D" stroke-opacity=".4" stroke-width="1"/><text x="24" y="30" class="tsm" fill="#DC382D">Redis</text></g><text x="744" y="118" class="lbl">Redis</text>
-  <g transform="translate(795,55)" class="icon" style="animation-delay:.6s"><rect width="48" height="48" rx="10" fill="#FF9900" fill-opacity=".15" stroke="#FF9900" stroke-opacity=".4" stroke-width="1"/><text x="24" y="30" class="tsm" fill="#FF9900">AWS</text></g><text x="819" y="118" class="lbl">AWS</text>
-  <line x1="60" y1="135" x2="840" y2="135" stroke="#1f2937" stroke-width=".5"/>
-  <g transform="translate(120,143)" class="icon" style="animation-delay:.65s"><rect width="42" height="42" rx="8" fill="#F05032" fill-opacity=".15" stroke="#F05032" stroke-opacity=".4" stroke-width="1"/><text x="21" y="26" class="tsm" fill="#F05032">Git</text></g><text x="141" y="196" class="lbl">Git</text>
-  <g transform="translate(210,143)" class="icon" style="animation-delay:.7s"><rect width="42" height="42" rx="8" fill="#FCC624" fill-opacity=".15" stroke="#FCC624" stroke-opacity=".4" stroke-width="1"/><text x="21" y="26" class="tsm" fill="#FCC624">Linux</text></g><text x="231" y="196" class="lbl">Linux</text>
-  <g transform="translate(300,143)" class="icon" style="animation-delay:.75s"><rect width="42" height="42" rx="8" fill="#47A248" fill-opacity=".15" stroke="#47A248" stroke-opacity=".4" stroke-width="1"/><text x="21" y="26" class="tsm" fill="#47A248">Mongo</text></g><text x="321" y="196" class="lbl">MongoDB</text>
-  <g transform="translate(390,143)" class="icon" style="animation-delay:.8s"><rect width="42" height="42" rx="8" fill="#E10098" fill-opacity=".15" stroke="#E10098" stroke-opacity=".4" stroke-width="1"/><text x="21" y="26" class="tsm" fill="#E10098">GQL</text></g><text x="411" y="196" class="lbl">GraphQL</text>
-  <g transform="translate(480,143)" class="icon" style="animation-delay:.85s"><rect width="42" height="42" rx="8" fill="#06B6D4" fill-opacity=".15" stroke="#06B6D4" stroke-opacity=".4" stroke-width="1"/><text x="21" y="26" class="tsm" fill="#06B6D4">TW</text></g><text x="501" y="196" class="lbl">Tailwind</text>
-  <g transform="translate(570,143)" class="icon" style="animation-delay:.9s"><rect width="42" height="42" rx="8" fill="#ffffff" fill-opacity=".1" stroke="#ffffff" stroke-opacity=".3" stroke-width="1"/><text x="21" y="26" class="tsm" fill="#ffffff">Next</text></g><text x="591" y="196" class="lbl">Next.js</text>
-  <g transform="translate(660,143)" class="icon" style="animation-delay:.95s"><rect width="42" height="42" rx="8" fill="#E0234E" fill-opacity=".15" stroke="#E0234E" stroke-opacity=".4" stroke-width="1"/><text x="21" y="26" class="tsm" fill="#E0234E">Nest</text></g><text x="681" y="196" class="lbl">NestJS</text>
-  <g transform="translate(750,143)" class="icon" style="animation-delay:1s"><rect width="42" height="42" rx="8" fill="#326CE5" fill-opacity=".15" stroke="#326CE5" stroke-opacity=".4" stroke-width="1"/><text x="21" y="26" class="tsm" fill="#326CE5">K8s</text></g><text x="771" y="196" class="lbl">Kubernetes</text>
+  <text x="450" y="29" text-anchor="middle" class="hdr">&#x26A1; TECH STACK</text>
+  <line x1="50" y1="39" x2="850" y2="39" stroke="#1f2937" stroke-width="1"/>
+  <g transform="translate(42,50)"  class="ic" style="animation-delay:.05s"><rect width="48" height="48" rx="10" fill="#F0DB4F" fill-opacity=".12" stroke="#F0DB4F" stroke-opacity=".4" stroke-width="1"/><text x="24" y="31" class="t" fill="#F0DB4F">JS</text></g>
+  <text x="66" y="114" class="lbl">JavaScript</text>
+  <g transform="translate(116,50)" class="ic" style="animation-delay:.10s"><rect width="48" height="48" rx="10" fill="#3178c6" fill-opacity=".12" stroke="#3178c6" stroke-opacity=".4" stroke-width="1"/><text x="24" y="31" class="t" fill="#3178c6">TS</text></g>
+  <text x="140" y="114" class="lbl">TypeScript</text>
+  <g transform="translate(190,50)" class="ic" style="animation-delay:.15s"><rect width="48" height="48" rx="10" fill="#61DAFB" fill-opacity=".12" stroke="#61DAFB" stroke-opacity=".4" stroke-width="1"/><text x="24" y="31" class="t" fill="#61DAFB">React</text></g>
+  <text x="214" y="114" class="lbl">React</text>
+  <g transform="translate(264,50)" class="ic" style="animation-delay:.20s"><rect width="48" height="48" rx="10" fill="#42b883" fill-opacity=".12" stroke="#42b883" stroke-opacity=".4" stroke-width="1"/><text x="24" y="31" class="t" fill="#42b883">Vue</text></g>
+  <text x="288" y="114" class="lbl">Vue.js</text>
+  <g transform="translate(338,50)" class="ic" style="animation-delay:.25s"><rect width="48" height="48" rx="10" fill="#339933" fill-opacity=".12" stroke="#339933" stroke-opacity=".4" stroke-width="1"/><text x="24" y="31" class="t" fill="#339933">Node</text></g>
+  <text x="362" y="114" class="lbl">Node.js</text>
+  <g transform="translate(412,50)" class="ic" style="animation-delay:.30s"><rect width="48" height="48" rx="10" fill="#3776AB" fill-opacity=".12" stroke="#3776AB" stroke-opacity=".4" stroke-width="1"/><text x="24" y="31" class="t" fill="#3776AB">Python</text></g>
+  <text x="436" y="114" class="lbl">Python</text>
+  <g transform="translate(486,50)" class="ic" style="animation-delay:.35s"><rect width="48" height="48" rx="10" fill="#00ACD7" fill-opacity=".12" stroke="#00ACD7" stroke-opacity=".4" stroke-width="1"/><text x="24" y="31" class="t" fill="#00ACD7">Go</text></g>
+  <text x="510" y="114" class="lbl">Go</text>
+  <g transform="translate(560,50)" class="ic" style="animation-delay:.40s"><rect width="48" height="48" rx="10" fill="#2496ED" fill-opacity=".12" stroke="#2496ED" stroke-opacity=".4" stroke-width="1"/><text x="24" y="31" class="t" fill="#2496ED">Docker</text></g>
+  <text x="584" y="114" class="lbl">Docker</text>
+  <g transform="translate(634,50)" class="ic" style="animation-delay:.45s"><rect width="48" height="48" rx="10" fill="#336791" fill-opacity=".12" stroke="#336791" stroke-opacity=".4" stroke-width="1"/><text x="24" y="31" class="t" fill="#336791">PG</text></g>
+  <text x="658" y="114" class="lbl">Postgres</text>
+  <g transform="translate(708,50)" class="ic" style="animation-delay:.50s"><rect width="48" height="48" rx="10" fill="#DC382D" fill-opacity=".12" stroke="#DC382D" stroke-opacity=".4" stroke-width="1"/><text x="24" y="31" class="t" fill="#DC382D">Redis</text></g>
+  <text x="732" y="114" class="lbl">Redis</text>
+  <g transform="translate(782,50)" class="ic" style="animation-delay:.55s"><rect width="48" height="48" rx="10" fill="#FF9900" fill-opacity=".12" stroke="#FF9900" stroke-opacity=".4" stroke-width="1"/><text x="24" y="31" class="t" fill="#FF9900">AWS</text></g>
+  <text x="806" y="114" class="lbl">AWS</text>
+  <line x1="50" y1="128" x2="850" y2="128" stroke="#1f2937" stroke-width="0.5"/>
+  <g transform="translate(99,135)"  class="ic" style="animation-delay:.60s"><rect width="42" height="42" rx="8" fill="#F05032" fill-opacity=".12" stroke="#F05032" stroke-opacity=".4" stroke-width="1"/><text x="21" y="27" class="t" fill="#F05032">Git</text></g>
+  <text x="120" y="190" class="lbl">Git</text>
+  <g transform="translate(184,135)" class="ic" style="animation-delay:.65s"><rect width="42" height="42" rx="8" fill="#FCC624" fill-opacity=".12" stroke="#FCC624" stroke-opacity=".4" stroke-width="1"/><text x="21" y="27" class="t" fill="#FCC624">Linux</text></g>
+  <text x="205" y="190" class="lbl">Linux</text>
+  <g transform="translate(269,135)" class="ic" style="animation-delay:.70s"><rect width="42" height="42" rx="8" fill="#47A248" fill-opacity=".12" stroke="#47A248" stroke-opacity=".4" stroke-width="1"/><text x="21" y="27" class="t" fill="#47A248">Mongo</text></g>
+  <text x="290" y="190" class="lbl">MongoDB</text>
+  <g transform="translate(354,135)" class="ic" style="animation-delay:.75s"><rect width="42" height="42" rx="8" fill="#E10098" fill-opacity=".12" stroke="#E10098" stroke-opacity=".4" stroke-width="1"/><text x="21" y="27" class="t" fill="#E10098">GQL</text></g>
+  <text x="375" y="190" class="lbl">GraphQL</text>
+  <g transform="translate(439,135)" class="ic" style="animation-delay:.80s"><rect width="42" height="42" rx="8" fill="#06B6D4" fill-opacity=".12" stroke="#06B6D4" stroke-opacity=".4" stroke-width="1"/><text x="21" y="27" class="t" fill="#06B6D4">TW</text></g>
+  <text x="460" y="190" class="lbl">Tailwind</text>
+  <g transform="translate(524,135)" class="ic" style="animation-delay:.85s"><rect width="42" height="42" rx="8" fill="#fff" fill-opacity=".08" stroke="#fff" stroke-opacity=".25" stroke-width="1"/><text x="21" y="27" class="t" fill="#e6edf3">Next</text></g>
+  <text x="545" y="190" class="lbl">Next.js</text>
+  <g transform="translate(609,135)" class="ic" style="animation-delay:.90s"><rect width="42" height="42" rx="8" fill="#E0234E" fill-opacity=".12" stroke="#E0234E" stroke-opacity=".4" stroke-width="1"/><text x="21" y="27" class="t" fill="#E0234E">Nest</text></g>
+  <text x="630" y="190" class="lbl">NestJS</text>
+  <g transform="translate(694,135)" class="ic" style="animation-delay:.95s"><rect width="42" height="42" rx="8" fill="#326CE5" fill-opacity=".12" stroke="#326CE5" stroke-opacity=".4" stroke-width="1"/><text x="21" y="27" class="t" fill="#326CE5">K8s</text></g>
+  <text x="715" y="190" class="lbl">Kubernetes</text>
 </svg>

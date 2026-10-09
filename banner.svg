@@ -1,79 +1,115 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="900" height="280">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300">
   <defs>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0a0e17"/>
-      <stop offset="50%" stop-color="#0d1117"/>
-      <stop offset="100%" stop-color="#0a0e17"/>
+      <stop offset="0%" stop-color="#060b14"/><stop offset="50%" stop-color="#0d1117"/><stop offset="100%" stop-color="#060b14"/>
     </linearGradient>
     <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38bdf8"/>
-      <stop offset="50%" stop-color="#818cf8"/>
-      <stop offset="100%" stop-color="#e879f9"/>
+      <stop offset="0%" stop-color="#38bdf8"/><stop offset="50%" stop-color="#818cf8"/><stop offset="100%" stop-color="#e879f9"/>
     </linearGradient>
-    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6"/>
-      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#e879f9" stop-opacity="0.6"/>
+    <linearGradient id="bdrGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.9"/><stop offset="50%" stop-color="#818cf8" stop-opacity="0.4"/><stop offset="100%" stop-color="#e879f9" stop-opacity="0.9"/>
     </linearGradient>
-    <filter id="softglow">
-      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <pattern id="grid" width="80" height="35" patternUnits="userSpaceOnUse">
-      <path d="M 80 0 L 0 0 0 35" fill="none" stroke="#38bdf8" stroke-width="0.5" stroke-opacity="0.15"/>
+    <linearGradient id="scanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0"/><stop offset="50%" stop-color="#38bdf8" stop-opacity="0.08"/><stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="glow2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#38bdf8" stroke-width="0.4" stroke-opacity="0.12"/>
     </pattern>
+    <clipPath id="mc"><rect width="900" height="300" rx="16"/></clipPath>
     <style>
-      @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-6px); } }
-      .float-anim { animation: float 3s ease-in-out infinite; }
-      .code-txt { opacity: 0.12; font-family: 'Courier New', monospace; font-size: 10px; }
-      .btn-txt { font-family: -apple-system, sans-serif; font-size: 13px; font-weight: 600; }
+      @keyframes gs  { 0%{transform:translateY(0)} 100%{transform:translateY(40px)} }
+      @keyframes fl  { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+      @keyframes gp  { 0%,100%{filter:drop-shadow(0 0 8px #38bdf8aa)} 50%{filter:drop-shadow(0 0 28px #e879f9cc) drop-shadow(0 0 55px #818cf888)} }
+      @keyframes sc  { 0%{transform:translateY(-60px)} 100%{transform:translateY(360px)} }
+      @keyframes df  { to{stroke-dashoffset:-80} }
+      @keyframes tw  { 0%,100%{opacity:.1} 50%{opacity:.8} }
+      @keyframes ocw { from{transform:rotate(0deg) translateX(200px) rotate(0deg)} to{transform:rotate(360deg) translateX(200px) rotate(-360deg)} }
+      @keyframes occ { from{transform:rotate(0deg) translateX(200px) rotate(0deg)} to{transform:rotate(-360deg) translateX(200px) rotate(360deg)} }
+      @keyframes fsd { 0%{opacity:0;transform:translateY(-24px)} 100%{opacity:1;transform:translateY(0)} }
+      @keyframes fsu { 0%{opacity:0;transform:translateY(24px)}  100%{opacity:1;transform:translateY(0)} }
+      @keyframes cf  { 0%,100%{opacity:.18} 33%{opacity:.08} 66%{opacity:.22} }
+      .grid-s{animation:gs 3s linear infinite}
+      .scan  {animation:sc 4s linear infinite}
+      .fg    {animation:fl 4.5s ease-in-out infinite}
+      .nglow {animation:gp 3s ease-in-out infinite}
+      .bdash {stroke-dasharray:18 9;animation:df 4s linear infinite}
+      .p1{animation:tw 2.1s ease-in-out infinite}
+      .p2{animation:tw 3s ease-in-out .4s infinite}
+      .p3{animation:tw 2.5s ease-in-out .8s infinite}
+      .p4{animation:tw 1.8s ease-in-out 1.2s infinite}
+      .p5{animation:tw 3.3s ease-in-out .2s infinite}
+      .ocw{animation:ocw 12s linear infinite;transform-origin:450px 148px}
+      .occ{animation:occ 16s linear infinite;transform-origin:450px 148px}
+      .hi{animation:fsd .8s ease-out 0s both}
+      .ni{animation:fsd .9s ease-out .15s both}
+      .si{animation:fsu .8s ease-out .3s both}
+      .b1{animation:fsu .7s ease-out .5s both}
+      .b2{animation:fsu .7s ease-out .65s both}
+      .b3{animation:fsu .7s ease-out .8s both}
+      .cf{animation:cf 4s ease-in-out infinite;font-family:monospace;font-size:10px}
+      .bt{font-family:sans-serif;font-size:13px;font-weight:600}
     </style>
   </defs>
+  <rect width="900" height="300" rx="16" fill="url(#bgGrad)"/>
+  <g clip-path="url(#mc)">
+    <g class="grid-s"><rect width="900" height="380" y="-80" fill="url(#grid)"/></g>
+    <ellipse cx="180" cy="148" rx="200" ry="140" fill="#38bdf8" fill-opacity=".045"/>
+    <ellipse cx="720" cy="148" rx="200" ry="140" fill="#e879f9" fill-opacity=".045"/>
+    <ellipse cx="450" cy="300" rx="300" ry="80"  fill="#818cf8" fill-opacity=".025"/>
+    <rect class="scan" width="900" height="60" fill="url(#scanGrad)" y="0"/>
+    <text class="cf" x="20" y="42" fill="#38bdf8">01101000</text>
+    <text class="cf" x="20" y="56" fill="#38bdf8" style="animation-delay:.6s">00110100</text>
+    <text class="cf" x="20" y="70" fill="#38bdf8" style="animation-delay:1.2s">11001010</text>
+    <text class="cf" x="20" y="84" fill="#38bdf8" style="animation-delay:1.8s">01010110</text>
+    <text class="cf" x="20" y="98" fill="#38bdf8" style="animation-delay:2.4s">10110001</text>
+    <text class="cf" x="820" y="42" fill="#e879f9" style="animation-delay:.3s">10010110</text>
+    <text class="cf" x="820" y="56" fill="#e879f9" style="animation-delay:.9s">01101001</text>
+    <text class="cf" x="820" y="70" fill="#e879f9" style="animation-delay:1.5s">00110100</text>
+    <text class="cf" x="820" y="84" fill="#e879f9" style="animation-delay:2.1s">11011010</text>
+    <text class="cf" x="820" y="98" fill="#e879f9" style="animation-delay:2.7s">01001101</text>
+    <circle class="p1" cx="90" cy="220" r="1.5" fill="#38bdf8"/>
+    <circle class="p2" cx="800" cy="80" r="2" fill="#e879f9"/>
+    <circle class="p3" cx="160" cy="280" r="1.5" fill="#818cf8"/>
+    <circle class="p4" cx="750" cy="260" r="2" fill="#38bdf8"/>
+    <circle class="p5" cx="50" cy="150" r="1" fill="#e879f9"/>
+    <circle class="p1" cx="860" cy="190" r="1.5" fill="#818cf8"/>
+    <circle class="p3" cx="420" cy="30" r="1" fill="#38bdf8"/>
+    <circle class="p2" cx="480" cy="280" r="1.5" fill="#e879f9"/>
+    <g class="ocw"><circle cx="450" cy="148" r="3" fill="#38bdf8" fill-opacity=".6" filter="url(#glow2)"/></g>
+    <g class="occ"><circle cx="450" cy="148" r="2.5" fill="#e879f9" fill-opacity=".6" filter="url(#glow2)"/></g>
+  </g>
 
-  <rect width="900" height="280" rx="14" fill="url(#bgGrad)"/>
-  <rect width="900" height="280" rx="14" fill="url(#grid)"/>
-  <rect width="900" height="280" rx="14" fill="none" stroke="url(#borderGrad)" stroke-width="1.5"/>
+  <rect width="900" height="300" rx="16" fill="none" stroke="url(#bdrGrad)" stroke-width="2" class="bdash"/>
 
-  <text x="18" y="40" class="code-txt" fill="#38bdf8">01101000<tspan x="18" y="55">00110100</tspan><tspan x="18" y="70">11001010</tspan><tspan x="18" y="85">01010110</tspan><tspan x="18" y="100">10110001</tspan></text>
-  <text x="810" y="40" class="code-txt" fill="#e879f9">10010110<tspan x="810" y="55">01101001</tspan><tspan x="810" y="70">00110100</tspan><tspan x="810" y="85">11011010</tspan><tspan x="810" y="100">01001101</tspan></text>
+  <g class="fg">
+    <text x="450" y="98" text-anchor="middle" font-family="monospace" font-size="15" letter-spacing="1" class="hi">
+      <tspan fill="#38bdf8" font-weight="bold">&lt;div&gt;</tspan><tspan fill="#e6edf3" dx="7">Hello there,</tspan><tspan fill="#38bdf8" font-weight="bold" dx="7">&lt;/div&gt;</tspan>
+    </text>
+    <text x="450" y="166" text-anchor="middle" font-family="sans-serif" font-size="52" font-weight="900" letter-spacing="-1" class="ni nglow">
+      <tspan fill="#ffffff">I'm </tspan><tspan fill="url(#nameGrad)" filter="url(#glow)">Duy Cuong Dev</tspan>
+    </text>
+    <text x="450" y="196" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#6b7280" letter-spacing="4" class="si">&#x2726; FULL STACK DEVELOPER &#x2726;</text>
+  </g>
 
-  <ellipse cx="250" cy="140" rx="120" ry="80" fill="#38bdf8" fill-opacity="0.04"/>
-  <ellipse cx="650" cy="140" rx="120" ry="80" fill="#e879f9" fill-opacity="0.04"/>
+  <g transform="translate(263,220)" class="b1">
+    <rect width="110" height="34" rx="17" fill="#161b22" stroke="#30363d" stroke-width="1.2"/>
+    <path transform="translate(13,7) scale(0.76)" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" fill="#e6edf3"/>
+    <text x="40" y="22" class="bt" fill="#e6edf3">GitHub</text>
+  </g>
 
-  <g transform="translate(0, 0)">
-    <g class="float-anim">
-      <text x="450" y="92" text-anchor="middle" font-family="'Courier New', monospace" font-size="15" fill="#6b7280" letter-spacing="1">
-        <tspan fill="#38bdf8" font-weight="bold">&lt;div&gt;</tspan>
-        <tspan fill="#e6edf3" dx="6">Hello there,</tspan>
-        <tspan fill="#38bdf8" font-weight="bold" dx="6">&lt;/div&gt;</tspan>
-      </text>
-      <text x="450" y="158" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="52" font-weight="900" letter-spacing="-1">
-        <tspan fill="#ffffff">I'm </tspan><tspan fill="url(#nameGrad)" filter="url(#softglow)">Duy Cuong Dev</tspan>
-      </text>
-      <text x="450" y="188" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" fill="#6b7280" letter-spacing="3">✦ FULL STACK DEVELOPER ✦</text>
-    </g>
+  <g transform="translate(385,220)" class="b2">
+    <rect width="120" height="34" rx="17" fill="#18191c" stroke="#3a3b3c" stroke-width="1.2"/>
+    <path transform="translate(13,6) scale(0.88)" d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z" fill="#818cf8"/>
+    <text x="40" y="22" class="bt" fill="#c9d1d9">Facebook</text>
+  </g>
 
-    <g transform="translate(263, 210)">
-      <rect width="110" height="34" rx="17" fill="#161b22" stroke="#30363d" stroke-width="1.2"/>
-      <path transform="translate(14, 8) scale(0.75)" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" fill="#e6edf3"/>
-      <text x="40" y="22" class="btn-txt" fill="#e6edf3">GitHub</text>
-    </g>
-
-    <g transform="translate(385, 210)">
-      <rect width="120" height="34" rx="17" fill="#18191c" stroke="#3a3b3c" stroke-width="1.2"/>
-      <path transform="translate(14, 7) scale(0.85)" d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z" fill="#818cf8"/>
-      <text x="40" y="22" class="btn-txt" fill="#c9d1d9">Facebook</text>
-    </g>
-
-    <g transform="translate(517, 210)">
-      <rect width="120" height="34" rx="17" fill="#1a1a2e" stroke="#502844" stroke-width="1.2"/>
-      <rect transform="translate(13, 8)" width="14" height="14" rx="4" fill="none" stroke="#e879f9" stroke-width="1.5"/>
-      <circle cx="20" cy="15" r="3.5" fill="none" stroke="#e879f9" stroke-width="1.3"/>
-      <circle cx="25.5" cy="9.5" r="1" fill="#e879f9"/>
-      <text x="40" y="22" class="btn-txt" fill="#fbcfe8">Instagram</text>
-    </g>
+  <g transform="translate(517,220)" class="b3">
+    <rect width="120" height="34" rx="17" fill="#1a1a2e" stroke="#502844" stroke-width="1.2"/>
+    <rect x="13" y="8" width="15" height="15" rx="4.5" fill="none" stroke="#e879f9" stroke-width="1.6"/>
+    <circle cx="20.5" cy="15.5" r="3.8" fill="none" stroke="#e879f9" stroke-width="1.3"/>
+    <circle cx="27" cy="9.5" r="1.2" fill="#e879f9"/>
+    <text x="40" y="22" class="bt" fill="#fbcfe8">Instagram</text>
   </g>
 </svg>

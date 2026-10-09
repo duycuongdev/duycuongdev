@@ -1,4 +1,4 @@
-﻿<div align="center">
+<div align="center">
 
 <a href="#">
   <img src="./banner.svg" alt="Banner" width="100%">
@@ -19,8 +19,9 @@
 <br/>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=duycuongdev&show_icons=true&theme=react&hide_border=true&bg_color=0a0e17" alt="GitHub Stats" width="49%">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=duycuongdev&layout=compact&theme=react&hide_border=true&bg_color=0a0e17" alt="Top Langs" width="49%">
+  <img src="https://github-readme-stats.vercel.app/api?username=duycuongdev&show_icons=true&theme=react&hide_border=true&bg_color=0a0e17&title_color=38bdf8&icon_color=818cf8" alt="GitHub Stats" width="49%">
+  &nbsp;
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=duycuongdev&layout=compact&theme=react&hide_border=true&bg_color=0a0e17&title_color=38bdf8" alt="Top Langs" width="49%">
 </p>
 
 </div>
