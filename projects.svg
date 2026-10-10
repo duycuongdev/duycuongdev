@@ -25,7 +25,6 @@
     </style>
   </defs>
   <rect width="900" height="300" rx="12" fill="url(#bg)"/>
-  <rect width="900" height="300" rx="12" fill="none" stroke="url(#bd)" stroke-width="1.5"/>
   <rect x="50" y="22" width="36" height="36" rx="9" fill="#171742" stroke="#34347d" stroke-width="1"/>
   <text x="68" y="46" text-anchor="middle" font-size="18">&#x1F680;</text>
   <text x="100" y="48" class="hdr">Featured Projects</text>
