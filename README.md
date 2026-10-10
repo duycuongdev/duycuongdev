@@ -10,14 +10,6 @@
   <img src="./projects.svg" alt="Projects" width="100%">
 </a>
 
-<p>
-  <a href="https://github.com/duycuongdev/Trello_Web">Trello Web</a> |
-  <a href="https://github.com/duycuongdev/Trello_Api">Trello API</a> |
-  <a href="https://github.com/duycuongdev/AquaLife_Web">AquaLife Web</a> |
-  <a href="https://github.com/duycuongdev/AquaLife_Api">AquaLife API</a> |
-  <a href="https://github.com/duycuongdev/dowload-video-tiktok">TikTok Downloader</a>
-</p>
-
 <br/>
 
 <a href="#">
