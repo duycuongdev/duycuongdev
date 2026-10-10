@@ -22,16 +22,14 @@
   </defs>
 
   <rect width="900" height="300" rx="12" fill="url(#bg)"/>
-  <rect width="900" height="300" rx="12" fill="none" stroke="#182337" stroke-width="1.5"/>
-
-  <rect x="50" y="22" width="36" height="36" rx="9" fill="#2a2110" stroke="#70520b"/>
-  <text x="68" y="47" text-anchor="middle" class="trophy" font-size="19">&#x1F3C6;</text>
-  <text x="100" y="48" class="head">Trophies &amp; Achievements</text>
-  <text x="850" y="45" text-anchor="end" class="muted">Profile showcase</text>
-  <line x1="50" y1="70" x2="850" y2="70" stroke="#263044" stroke-width="1"/>
+  <rect x="42" y="22" width="36" height="36" rx="9" fill="#2a2110" stroke="#70520b"/>
+  <text x="60" y="47" text-anchor="middle" class="trophy" font-size="19">&#x1F3C6;</text>
+  <text x="92" y="48" class="head">Trophies &amp; Achievements</text>
+  <text x="858" y="45" text-anchor="end" class="muted">Profile showcase</text>
+  <line x1="42" y1="70" x2="858" y2="70" stroke="#263044" stroke-width="1"/>
 
   <g class="in">
-    <g transform="translate(50,88)">
+    <g transform="translate(42,88)">
       <rect class="card-bg" width="185" height="200" rx="13" fill="#101725" stroke="#263044" stroke-width="1.2"/>
       <circle cx="92.5" cy="54" r="31" fill="#2a2110" stroke="#a16207" stroke-width="1.2"/>
       <text x="92.5" y="65" text-anchor="middle" font-size="30" fill="#facc15">&#x1F4C1;</text>
@@ -41,7 +39,7 @@
       <text x="92.5" y="173" text-anchor="middle" class="badge" fill="#facc15">GOLD</text>
     </g>
 
-    <g transform="translate(253,88)">
+    <g transform="translate(245,88)">
       <rect class="card-bg" width="185" height="200" rx="13" fill="#101725" stroke="#263044" stroke-width="1.2"/>
       <circle cx="92.5" cy="54" r="31" fill="#211638" stroke="#7c3aed" stroke-width="1.2"/>
       <text x="92.5" y="64" text-anchor="middle" font-size="29" fill="#c084fc">&#x269B;</text>
@@ -51,7 +49,7 @@
       <text x="92.5" y="173" text-anchor="middle" class="badge" fill="#c084fc">SILVER</text>
     </g>
 
-    <g transform="translate(456,88)">
+    <g transform="translate(448,88)">
       <rect class="card-bg" width="185" height="200" rx="13" fill="#101725" stroke="#263044" stroke-width="1.2"/>
       <circle cx="92.5" cy="54" r="31" fill="#07333a" stroke="#0e7490" stroke-width="1.2"/>
       <text x="92.5" y="65" text-anchor="middle" font-size="29" fill="#22d3ee">&#x1F517;</text>
@@ -61,7 +59,7 @@
       <text x="92.5" y="173" text-anchor="middle" class="badge" fill="#22d3ee">DIAMOND</text>
     </g>
 
-    <g transform="translate(659,88)">
+    <g transform="translate(651,88)">
       <rect class="card-bg" width="185" height="200" rx="13" fill="#101725" stroke="#263044" stroke-width="1.2"/>
       <circle cx="92.5" cy="54" r="31" fill="#351827" stroke="#9f1239" stroke-width="1.2"/>
       <text x="92.5" y="65" text-anchor="middle" font-size="29" fill="#fb7185">&#x26A1;</text>
