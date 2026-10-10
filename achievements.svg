@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17"/><stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#facc15"/><stop offset="100%" stop-color="#a16207"/>
+    </linearGradient>
+    <style>
+      @keyframes fade { from{opacity:0} to{opacity:1} }
+      @keyframes glow { 0%,100%{filter:drop-shadow(0 0 3px #facc1555)} 50%{filter:drop-shadow(0 0 11px #facc15aa)} }
+      @keyframes borderPulse { 0%,100%{stroke:#263044} 50%{stroke:#35415b} }
+      .in{animation:fade .7s ease-out both}
+      .trophy{animation:glow 3s ease-in-out infinite}
+      .card-bg{animation:borderPulse 3s ease-in-out infinite}
+      .head{font-family:sans-serif;font-size:20px;font-weight:700;fill:#e6edf3}
+      .muted{font-family:monospace;font-size:11px;fill:#8b9ab0}
+      .card-title{font-family:sans-serif;font-size:14px;font-weight:700;fill:#e6edf3}
+      .card-value{font-family:monospace;font-size:12px;font-weight:700}
+      .badge{font-family:monospace;font-size:10px;font-weight:700}
+    </style>
+  </defs>
+
+  <rect width="900" height="300" rx="12" fill="url(#bg)"/>
+  <rect width="900" height="300" rx="12" fill="none" stroke="#182337" stroke-width="1.5"/>
+
+  <rect x="50" y="22" width="36" height="36" rx="9" fill="#2a2110" stroke="#70520b"/>
+  <text x="68" y="47" text-anchor="middle" class="trophy" font-size="19">&#x1F3C6;</text>
+  <text x="100" y="48" class="head">Trophies &amp; Achievements</text>
+  <text x="850" y="45" text-anchor="end" class="muted">Profile showcase</text>
+  <line x1="50" y1="70" x2="850" y2="70" stroke="#263044" stroke-width="1"/>
+
+  <g class="in">
+    <g transform="translate(50,88)">
+      <rect class="card-bg" width="185" height="200" rx="13" fill="#101725" stroke="#263044" stroke-width="1.2"/>
+      <circle cx="92.5" cy="54" r="31" fill="#2a2110" stroke="#a16207" stroke-width="1.2"/>
+      <text x="92.5" y="65" text-anchor="middle" font-size="30" fill="#facc15">&#x1F4C1;</text>
+      <text x="92.5" y="112" text-anchor="middle" class="card-title">Repository Builder</text>
+      <text x="92.5" y="139" text-anchor="middle" class="card-value" fill="#facc15">7 Public Repos</text>
+      <rect x="64" y="157" width="57" height="24" rx="12" fill="#2a2110" stroke="#a16207"/>
+      <text x="92.5" y="173" text-anchor="middle" class="badge" fill="#facc15">GOLD</text>
+    </g>
+
+    <g transform="translate(253,88)">
+      <rect class="card-bg" width="185" height="200" rx="13" fill="#101725" stroke="#263044" stroke-width="1.2"/>
+      <circle cx="92.5" cy="54" r="31" fill="#211638" stroke="#7c3aed" stroke-width="1.2"/>
+      <text x="92.5" y="64" text-anchor="middle" font-size="29" fill="#c084fc">&#x269B;</text>
+      <text x="92.5" y="112" text-anchor="middle" class="card-title">JavaScript Focus</text>
+      <text x="92.5" y="139" text-anchor="middle" class="card-value" fill="#c084fc">Primary Language</text>
+      <rect x="64" y="157" width="57" height="24" rx="12" fill="#211638" stroke="#7c3aed"/>
+      <text x="92.5" y="173" text-anchor="middle" class="badge" fill="#c084fc">SILVER</text>
+    </g>
+
+    <g transform="translate(456,88)">
+      <rect class="card-bg" width="185" height="200" rx="13" fill="#101725" stroke="#263044" stroke-width="1.2"/>
+      <circle cx="92.5" cy="54" r="31" fill="#07333a" stroke="#0e7490" stroke-width="1.2"/>
+      <text x="92.5" y="65" text-anchor="middle" font-size="29" fill="#22d3ee">&#x1F517;</text>
+      <text x="92.5" y="112" text-anchor="middle" class="card-title">Full-stack Builder</text>
+      <text x="92.5" y="139" text-anchor="middle" class="card-value" fill="#22d3ee">Web + API Projects</text>
+      <rect x="64" y="157" width="57" height="24" rx="12" fill="#07333a" stroke="#0e7490"/>
+      <text x="92.5" y="173" text-anchor="middle" class="badge" fill="#22d3ee">DIAMOND</text>
+    </g>
+
+    <g transform="translate(659,88)">
+      <rect class="card-bg" width="185" height="200" rx="13" fill="#101725" stroke="#263044" stroke-width="1.2"/>
+      <circle cx="92.5" cy="54" r="31" fill="#351827" stroke="#9f1239" stroke-width="1.2"/>
+      <text x="92.5" y="65" text-anchor="middle" font-size="29" fill="#fb7185">&#x26A1;</text>
+      <text x="92.5" y="112" text-anchor="middle" class="card-title">Active Portfolio</text>
+      <text x="92.5" y="139" text-anchor="middle" class="card-value" fill="#fb7185">Updated Automatically</text>
+      <rect x="64" y="157" width="57" height="24" rx="12" fill="#351827" stroke="#9f1239"/>
+      <text x="92.5" y="173" text-anchor="middle" class="badge" fill="#fb7185">BRONZE</text>
+    </g>
+  </g>
+</svg>
