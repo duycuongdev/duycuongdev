@@ -21,7 +21,6 @@
     </style>
   </defs>
 
-  <rect width="900" height="300" rx="12" fill="url(#bg)"/>
   <rect x="42" y="22" width="36" height="36" rx="9" fill="#2a2110" stroke="#70520b"/>
   <text x="60" y="47" text-anchor="middle" class="trophy" font-size="19">&#x1F3C6;</text>
   <text x="92" y="48" class="head">Trophies &amp; Achievements</text>
